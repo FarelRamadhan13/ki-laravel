@@ -4,7 +4,7 @@
         <div class="w-[18rem] border border-gray-500 p-6 rounded-md">
             <form action="{{ route('login') }}" method="post" class="flex flex-col gap-3">
                 @csrf
-                <h2 class="text-3xl font-semibold text-center mb-3">Login</h2>
+                <h2 class="text-3xl font-semibold text-center mb-3">Login {{ auth()->user()->name ?? ''}}</h2>
 
                 <div>
                     <label for="username" class="block font-medium mb-2 capitalize">username</label>

@@ -28,3 +28,4 @@ class AuthController extends Controller
         return to_route('login');
     }
 }
+
